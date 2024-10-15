@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Responsive</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <section id="main"> <!-- logo and navigation -->  
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Ruidoso Logo" class="logo">
+                <ul class="nav-list">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">History</a></li>
+                    <li> <a href="#">Visit</a></li>
+                    <li> <a href="#">Events</a></li>
+                    <li><button class="btn btn-secondary">Phone Number</button></li>
+                </ul>
+                <!-- hamburger icon toggle -->
+                <img src="images/nav-icon.svg" alt="hamburger icon" class="menu-btn">
+            </nav>
+        </div>
+        <div class="main-content">
+            <h1 class="intro-heading">Ruidoso is Built on Tourism</h1>
+            <h1 class="main-heading">Ruidoso, New Mexico brings you year-round entertainment and relaxation.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti tempore voluptate natus quam vel nesciunt eaque voluptatibus facere explicabo ut! Doloribus sint eius voluptatibus beatae consequuntur, porro rerum laudantium eligendi.</p>
+            <button class="btn btn-primary">Start</button>
+        </div>        
+    </section>
+
+    <section id="services"> <!-- service images --> 
+       <div class="flex-container">
+            <div class="section-title">
+                <h1>Plan Your Stay</h1>
+                <div class="line"></div>
+            </div>
+            
+            <div class="service">
+              <div class="flex-item-left">
+               <img src="images/service1.jpg" alt="Midtown Ruidoso">
+               <h3>Midtown</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur inventore eligendi in laboriosam. Deserunt atque possimus iure nesciunt fuga recusandae facere nulla earum, explicabo eligendi porro? Animi, eaque rem esse.</p>                
+            </div>
+            </div>
+            
+            <div class="service">
+               <img src="images/service2.jpg" alt="Spencer Theatre Ruidoso">
+               <h3>Spencer Theatre</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur inventore eligendi in laboriosam. Deserunt atque possimus iure nesciunt fuga recusandae facere nulla earum, explicabo eligendi porro? Animi, eaque rem esse.</p>                
+            </div>
+            
+            <div class="service">
+  
+               <img src="images/service3.jpg" alt="Historic Sites Ruidoso">
+               <h3>Historic Sites</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur inventore eligendi in laboriosam. Deserunt atque possimus iure nesciunt fuga recusandae facere nulla earum, explicabo eligendi porro? Animi, eaque rem esse.</p>                
+            </div>
+
+        </div>
+    </section>
+       
+    <section id="review"> <!-- visitor review--> 
+        <div class="container">
+            <h1>What Other's Say</h1>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro expedita quia quam accusantium, voluptate hic saepe nemo quibusdam, ut aperiam accusamus harum. Iste eaque, at pariatur! Autem voluptas reiciendis modi.</q></p>
+        </div>
+        
+        <div class="profile">
+            <img src="images/profile-picture.png" alt="Reviewers Profile Picture">
+            <h4>Reviewer's Name</h4>
+        </div>
+    </section>
+
+    <section id="about-us">  <!-- about destination -->   
+        <div class="container">
+            <div class="about-content">
+                <h4>About Us</h4>
+                <h1>Ruidoso Has Something for Everyone</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt expedita dolorum temporibus assumenda debitis nesciunt vel aperiam soluta nisi qui, non cupiditate, totam! Facilis, et veniam error labore illum aperiam.</p>
+                <button class="btn btn-primary">Find out More</button>
+            </div>          
+            <div class="about-image">
+                <img src="images/about-background.jpg" alt="View of Ruidoso"> 
+            </div>
+        </div>        
+    </section>
+    
+    <section id="questions"> <!-- questions about navigation --> 
+        <div class="container">
+            <h1>Do you have any questions?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi deserunt, non neque error nulla? Officia et expedita itaque voluptate consequatur exercitationem quae, qui velit dolores voluptatibus veniam laudantium nisi labore.</p>
+            <button class="btn btn-primary">Ask Us</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contianer"> <!-- logo and footer navigation --> 
+            <ul class="footer-links">
+                <li> <a href="">Home</a></li>
+                <li> <a href="">History</a></li>
+                <li> <a href="">Visit</a></li>
+                <li> <a href="">Events</a></li>
+            </ul>
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
+            <p><b>Ruidoso, NM</b></p>
+        </div>    
+    </footer>
+    
+    <!-- hamburger icon toggle -->
+    <script>
+    
+        const navBtn = document.querySelector('.menu-btn')
+        const navList = document.querySelector('.nav-list')
+        
+        navBtn.addEventListener('click', function(){
+                                navList.classList.toggle('active');
+                                });
+    
+    </script>
+    
+</body>
+</html>
